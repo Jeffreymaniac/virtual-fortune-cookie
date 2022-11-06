@@ -51,10 +51,12 @@ body {
     </button>
   <p style="font-size:25px;"><strong>Your fortune: <span id="fortune">(fortune goes here)</span></strong></p>
   <p>Click the fortune cookie above to get a random fortune!</p>
+  <br><br>
+  <p>Credits to <a href="http://www.fortunecookiemessage.com/" target="_blank">http://www.fortunecookiemessage.com/</a> for most of the messages.</p>
 </div>
 <script>
   function fortuneCookie() {
-    const stuff = ["Look closely at your surroundings.", "Better to do something imperfectly than to do nothing perfectly.", "hi", "", "", ""];
+    const stuff = ["Look closely at your surroundings.", "Better to do something imperfectly than to do nothing perfectly.", "Even if the person who appears most wrong, is also quite often right.", "Difficulty at the beginning usually means ease at the end.", "Great thoughts come from the heart.", "Integrity is doing the right thing, even if nobody is watching.", "The harder you try to not be like your parents, the more likely you will become them."];
 
        document.getElementById('fortune').innerHTML = stuff[Math.floor(Math.random() * stuff.length)];
   }
