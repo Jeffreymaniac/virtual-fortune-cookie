@@ -54,7 +54,9 @@ body {
 </div>
 <script>
   function fortuneCookie() {
-    
+    const stuff = ["Look closely at your surroundings.", "Better to do something imperfectly than to do nothing perfectly.", "hi", "", "", ""];
+
+       document.getElementById('fortune').innerHTML = stuff[Math.floor(Math.random() * stuff.length)];
   }
   </script>
   </body>
