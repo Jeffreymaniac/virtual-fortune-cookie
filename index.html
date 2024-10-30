@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-
-    <title>Virtual Fortune Cookie generator</title>
+    <title>Virtual Fortune Cookie message generator</title>
     
-            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="icon" href="https://em-content.zobj.net/source/apple/391/fortune-cookie_1f960.png" type="image/png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://em-content.zobj.net/source/apple/391/fortune-cookie_1f960.png" type="image/png">
     <link rel="shortcut icon" href="https://em-content.zobj.net/source/apple/391/fortune-cookie_1f960.png" type="image/png">
     <meta name="author" content="JaecadeJnight"/>
     <meta name="description" content="fortune cookie generator" />
     <meta name="keywords" content="fortune cookie" />
 <style>
-* {
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica", "Helvetica Neue", sans-serif, arial,"Apple Color Emoji","Segoe UI Emoji";
-}
+* {font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica", "Helvetica Neue", sans-serif, arial,"Apple Color Emoji","Segoe UI Emoji";}
 body {margin: 0;}
 
 .topnav {
-  overflow: hidden;
-  background-color: #333;
-    color: #f2f2f2;
+  color: #f2f2f2;
   background-color:Dodgerblue;
-
 }
 
 .topnav a {
@@ -31,33 +25,29 @@ body {margin: 0;}
   padding: 14px 16px;
   font-size: 17px;
 }
-
-
 </style>
   </head>
 <body>
-  
-    <div class="topnav">This virtual fortune cookie is made by <a href="https://jeffreymaniac.github.io/">Jeff/JaecadeJnight</a></div>
+<div class="topnav">This virtual fortune cookie generator is made by <a href="https://jeffreymaniac.github.io/">Jeff/JaecadeJnight</a></div>
 
 <div style="padding-left:16px">
   <h1>Virtual Fortune Cookie generator</h1>
   
   <center>
   <button onclick="fortuneCookie()">
-  <img src="https://static-00.iconduck.com/assets.00/fortune-cookie-emoji-1943x2048-yw7embb2.png" />
+  <img src="https://static-00.iconduck.com/assets.00/fortune-cookie-emoji-1943x2048-yw7embb2.png" style="width:12vw;cursor:pointer" />
     </button>
   </center>
   
-  <p style="font-size:25px;"><strong>Your fortune: <span id="fortune">(fortune goes here)</span></strong></p>
+  <p style="font-size:20px;"><strong>Your fortune: <span id="fortune">(fortune goes here)</span></strong></p>
   <p>Click the fortune cookie above to get a random fortune!</p>
   <br><br>
-  <p>Credits to <a href="http://www.fortunecookiemessage.com/" target="_blank">http://www.fortunecookiemessage.com/</a> for most of the messages.</p>
+  <p>Credits to <a href="https://www.fortunecookiemessage.com/" target="_blank">https://www.fortunecookiemessage.com/</a> for most of the messages.</p>
 </div>
 <script>
   function fortuneCookie() {
     const stuff = ["Look closely at your surroundings.", "Better to do something imperfectly than to do nothing perfectly.", "Even if the person who appears most wrong, is also quite often right.", "Difficulty at the beginning usually means ease at the end.", "Great thoughts come from the heart.", "Integrity is doing the right thing, even if nobody is watching.", "The harder you try to not be like your parents, the more likely you will become them.", "Its amazing how much good you can do if you don't care who gets the credit.", "You will travel to many exotic places in your lifetime.", "Your fortune is as sweet as a cookie."];
-
-       document.getElementById('fortune').innerHTML = stuff[Math.floor(Math.random() * stuff.length)];
+    document.getElementById('fortune').innerHTML = stuff[Math.floor(Math.random() * stuff.length)];
   }
   </script>
   </body>
