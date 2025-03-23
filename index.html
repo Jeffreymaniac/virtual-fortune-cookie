@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta charset="UTF-8"/>
     <title>Virtual Fortune Cookie message generator</title>
-    
+    <meta property="og:title" content="Virtual Fortune Cookie message generator" />
+    <meta property="og:site_name" content="Virtual Fortune Cookie message generator" />
+    <meta name="application_name" content="Virtual Fortune Cookie message generator" />
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://em-content.zobj.net/source/apple/391/fortune-cookie_1f960.png" type="image/png">
     <link rel="shortcut icon" href="https://em-content.zobj.net/source/apple/391/fortune-cookie_1f960.png" type="image/png">
     <meta name="author" content="JaecadeJnight"/>
+    <meta name="designer" content="JaecadeJnight"/>
+    <meta name="creator" content="JaecadeJnight"/>
     <meta name="description" content="fortune cookie generator" />
+    <meta property="og:description" content="fortune cookie generator" />
     <meta name="keywords" content="fortune cookie" />
 <style>
 * {font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica", "Helvetica Neue", sans-serif, arial,"Apple Color Emoji","Segoe UI Emoji";}
-body {margin: 0;}
+html,body {
+  margin: 0;
+  width:100%;
+  height:100%;
+}
 
 .topnav {
   color: #f2f2f2;
   background-color:Dodgerblue;
+  width:100%;
+  padding:2px;
 }
 
 .topnav a {
@@ -30,7 +43,7 @@ body {margin: 0;}
 <body>
 <div class="topnav">This virtual fortune cookie generator is made by <a href="https://jeffreymaniac.github.io/">Jeff/JaecadeJnight</a></div>
 
-<div style="padding-left:16px">
+<div style="padding:16px">
   <h1>Virtual Fortune Cookie generator</h1>
   
   <center>
@@ -38,15 +51,15 @@ body {margin: 0;}
   <img src="https://static-00.iconduck.com/assets.00/fortune-cookie-emoji-1943x2048-yw7embb2.png" style="width:12vw;cursor:pointer" />
     </button>
   </center>
-  
+  <p><noscript>This cookie won't work if you have scripts disabled.</noscript></p>
   <p style="font-size:20px;"><strong>Your fortune: <span id="fortune">(fortune goes here)</span></strong></p>
   <p>Click the fortune cookie above to get a random fortune!</p>
   <br><br>
-  <p>Credits to <a href="https://www.fortunecookiemessage.com/" target="_blank">https://www.fortunecookiemessage.com/</a> for most of the messages.</p>
+  <p>Credits to <a href="https://www.fortunecookiemessage.com/" target="_blank">https://www.fortunecookiemessage.com/</a> and <a href="https://best-ever-cookie-collection.com/fortune-cookie-sayings.html">https://best-ever-cookie-collection.com/fortune-cookie-sayings.html</a> for most of the messages.</p>
 </div>
 <script>
   function fortuneCookie() {
-    const stuff = ["Look closely at your surroundings.", "Better to do something imperfectly than to do nothing perfectly.", "Even if the person who appears most wrong, is also quite often right.", "Difficulty at the beginning usually means ease at the end.", "Great thoughts come from the heart.", "Integrity is doing the right thing, even if nobody is watching.", "The harder you try to not be like your parents, the more likely you will become them.", "Its amazing how much good you can do if you don't care who gets the credit.", "You will travel to many exotic places in your lifetime.", "Your fortune is as sweet as a cookie."];
+    const stuff = ["Look closely at your surroundings.", "Better to do something imperfectly than to do nothing perfectly.", "Even if the person who appears most wrong, is also quite often right.", "Difficulty at the beginning usually means ease at the end.", "Great thoughts come from the heart.", "Integrity is doing the right thing, even if nobody is watching.", "The harder you try to not be like your parents, the more likely you will become them.", "Its amazing how much good you can do if you don't care who gets the credit.", "You will travel to many exotic places in your lifetime.", "Your fortune is as sweet as a cookie.", "Forget injuries; never forget kindnesses.", "Love isn't something you find. Love is something that finds you.", "The only way to have a friend is to be one.", "Live this day as if it were your last.", "A journey of a thousand miles begins with a single step.", "Be true to your work, your word, and your friend.", "Your ability to juggle many tasks will take you far.", "Nothing great was ever achieved without enthusiasm.", "Bloom where you are planted.", "Live this day as if it were your last.", "Experience is the best teacher.";
     document.getElementById('fortune').innerHTML = stuff[Math.floor(Math.random() * stuff.length)];
   }
   </script>
